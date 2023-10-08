@@ -1,10 +1,10 @@
 # Information
 
-Run this in your spark core environment. Change the file path.
+Run this in your spark core environment.
 
 
 
-rddspark:
+rddcount:
 
 This python code performs a simple word count operation. It also shows how to use Spark's RDD (Resilient Distributed Dataset):
 
@@ -58,9 +58,9 @@ Printing the counts using a Python for loop.
 
 
 
-rdd aggregation:
+rddaggregation:
 
-We perform a series of transformations on an RDD of tuples, where each tuple represents a student's ID, their test score, and the date of the test. We\ll do this by:
+Perform a series of transformations on an RDD of tuples, where each tuple represents a student's ID, their test score, and the date of the test by:
 
 Creating a SparkConf object and a SparkContext object.
 
