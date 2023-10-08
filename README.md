@@ -3,6 +3,7 @@
 Run this in your spark core environment. Change the file path.
 
 
+
 rddspark:
 
 This python code performs a simple word count operation. It also shows how to use Spark's RDD (Resilient Distributed Dataset):
@@ -18,6 +19,7 @@ It splits the lines of the text file into words using the flatMap method of the 
 It counts the occurrences of each word using the countByValue method of the RDD.
 
 It prints the counts.
+
 
 
 rddfilter:
@@ -37,6 +39,7 @@ Summing the squared numbers using the reduce transformation.
 Printing the total using a Python print statement.
 
 
+
 rddremovestring:
 
 Creates an RDD of strings, removes any null or empty strings, converts all strings to lowercase, and then counts the occurrences of each string by:
@@ -53,3 +56,24 @@ Counting the occurrences of each string using the countByValue action.
 
 Printing the counts using a Python for loop.
 
+
+
+rdd aggregation:
+
+We perform a series of transformations on an RDD of tuples, where each tuple represents a student's ID, their test score, and the date of the test. We\ll do this by:
+
+Creating a SparkConf object and a SparkContext object.
+
+Creating an RDD of tuples, where each tuple represents a student's ID, their test score, and the date of the test.
+
+Filtering out the tuples with a null or empty student ID using the filter transformation.
+
+Grouping the data by student ID using the groupBy transformation.
+
+Calculating the average score for each student using the mapValues transformation.
+
+Sorting the students by their average score using the sortBy transformation.
+
+Collecting the results using the collect action.
+
+Printing the results using a Python for loop.
