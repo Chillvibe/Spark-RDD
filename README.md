@@ -19,3 +19,13 @@ Filtering out the even numbers from the RDD using the filter transformation.
 Squaring each number in the filtered RDD using the map transformation.
 Summing the squared numbers using the reduce transformation.
 Printing the total using a Python print statement.
+
+rddremovestring:
+Creates an RDD of strings, removes any null or empty strings, converts all strings to lowercase, and then counts the occurrences of each string by:
+Creating a SparkConf object and a SparkContext object.
+Creating an RDD of strings, including some null and empty strings.
+Removing null or empty strings from the RDD using the filter transformation.
+Converting all strings in the RDD to lowercase using the map transformation.
+Counting the occurrences of each string using the countByValue action.
+Printing the counts using a Python for loop.
+
